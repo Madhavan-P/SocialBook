@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Profile Page - SocialBook</title>
+    <!--CSS styling -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- web Header -->
+    <nav>
+      <!-- nav left -->
+      <div class="nav-left">
+        <a href="./index.html"
+          ><img src="./images/logo.png" alt="website-logo" class="website-logo"
+        /></a>
+        <ul>
+          <li>
+            <img src="./images/notification.png" alt="notification icon" />
+          </li>
+          <li><img src="./images/inbox.png" alt="inbox icon" /></li>
+          <li><img src="./images/video.png" alt="video icon" /></li>
+        </ul>
+      </div>
+      <!-- nav right -->
+      <div class="nav-right">
+        <div class="search-bar">
+          <img src="./images/search.png" alt="search-bar" />
+          <input type="search" placeholder="search" />
+        </div>
+        <div class="nav-user-icon online" onClick="settingMenuToggle()">
+          <img src="./images/profile-pic.png" alt="profile-picture" />
+        </div>
+      </div>
+      <!-- ------------------------ Setting Bar ------------------------ -->
+      <div class="setting-menu">
+        <div id="dark-btn" onClick="ToggleMode()">
+          <span></span>
+        </div>
+        <div class="setting-menu-inner">
+          <div class="user-profile">
+            <img src="./images/profile-pic.png" alt="User profile" />
+            <div>
+              <p>John Nicholson</p>
+              <a>See your profile</a>
+            </div>
+          </div>
+          <hr />
+          <div class="user-profile">
+            <img src="./images/feedback.png" alt="Feedback icon" />
+            <div>
+              <p>Give Feedback</p>
+              <a>Help us to improve the new design</a>
+            </div>
+          </div>
+          <hr />
+          <div class="setting-links">
+            <img src="./images/setting.png" alt="settings-icons" />
+            <a href="#"
+              >Settings & privacy
+              <img src="./images/arrow.png" alt="arrow-icon" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="./images/help.png" alt="help-icons" />
+            <a href="#"
+              >Help & Support
+              <img src="./images/arrow.png" alt="arrow-icon" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="./images/display.png" alt="display-icons" />
+            <a href="#"
+              >Display & Accessibility
+              <img src="./images/arrow.png" alt="arrow-icon" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="./images/logout.png" alt="logout-icons" />
+            <a href="#"
+              >Logout
+              <img src="./images/arrow.png" alt="arrow-icon" width="10px"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ------------------------ Profile Page ------------------------ -->
+    <div class="profile-container">
+      <img src="./images/cover.png" alt="cover image" class="cover-image" />
+      <div class="profile-details">
+        <div class="pd-left">
+          <div class="pd-row">
+            <img
+              src="./images/profile.png"
+              alt="friend image"
+              class="pd-image"
+            />
+            <div>
+              <h3>Jack Nicholson</h3>
+              <p>120 Friends - 20 mutual</p>
+              <img src="./images/member-1.png" alt="member-1" />
+              <img src="./images/member-2.png" alt="member-2" />
+              <img src="./images/member-3.png" alt="member-3" />
+              <img src="./images/member-4.png" alt="member-4" />
+            </div>
+          </div>
+        </div>
+        <div class="pd-right">
+          <button><img src="./images/add-friends.png" />Friend</button>
+          <button><img src="./images/Message.png" />Message</button>
+          <br />
+          <a href="#">
+            <img src="./images/more.png" alt="more-icon" />
+          </a>
+        </div>
+      </div>
+      <div class="profile-info">
+        <div class="info-col">
+          <div class="profile-intro">
+            <h3>Intro</h3>
+            <p class="text-intro">
+              Believe in yourself and you can do unbelievable things.
+              <img src="./images/feeling.png" />
+            </p>
+            <hr />
+            <ul>
+              <li>
+                <img src="./images/profile-job.png" alt="job image" /> Director
+                at 99media Ltd
+              </li>
+              <li>
+                <img src="./images/profile-study.png" alt="Study image" />
+                Studied at Amity university
+              </li>
+              <li>
+                <img src="./images/profile-study.png" alt="study image" />
+                went to DPS Delhi
+              </li>
+              <li>
+                <img src="./images/profile-home.png" alt="home image" /> Lives
+                in Bangalore, India
+              </li>
+              <li>
+                <img src="./images/profile-location.png" alt="location image" />
+                From Bangalore, India
+              </li>
+            </ul>
+          </div>
+          <div class="profile-intro profile-friends">
+            <div class="title-box">
+              <h3>Photos</h3>
+              <a href="#">All Photos</a>
+            </div>
+            <div class="photo-box">
+              <div><img src="./images/photo1.png" alt="photo" /></div>
+              <div><img src="./images/photo2.png" alt="photo" /></div>
+              <div><img src="./images/photo3.png" alt="photo" /></div>
+              <div><img src="./images/photo4.png" alt="photo" /></div>
+              <div><img src="./images/photo5.png" alt="photo" /></div>
+              <div><img src="./images/photo6.png" alt="photo" /></div>
+            </div>
+          </div>
+          <div class="profile-intro">
+            <div class="title-box">
+              <h3>Friends</h3>
+              <a href="#">All Friends</a>
+            </div>
+            <p>120 (10 mutual)</p>
+            <div class="photo-box friend-box">
+              <div>
+                <img src="./images/member-1.png" alt="photo" />
+                <p>Joseph N</p>
+              </div>
+              <div>
+                <img src="./images/member-2.png" alt="photo" />
+                <p>Nathan N</p>
+              </div>
+              <div>
+                <img src="./images/member-3.png" alt="photo" />
+                <p>George D</p>
+              </div>
+              <div>
+                <img src="./images/member-4.png" alt="photo" />
+                <p>Francise L</p>
+              </div>
+              <div>
+                <img src="./images/member-5.png" alt="photo" />
+                <p>Anthony E</p>
+              </div>
+              <div>
+                <img src="./images/member-6.png" alt="photo" />
+                <p>Michael A</p>
+              </div>
+              <div>
+                <img src="./images/member-7.png" alt="photo" />
+                <p>Edward M</p>
+              </div>
+              <div>
+                <img src="./images/member-8.png" alt="photo" />
+                <p>Bradon C</p>
+              </div>
+              <div>
+                <img src="./images/member-9.png" alt="photo" />
+                <p>James Doe</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="post-col">
+          <div class="write-post-container">
+            <div class="user-profile">
+              <img src="./images/profile-pic.png" alt="User profile" />
+              <div>
+                <p>John Nicholson</p>
+                <select style="background-color: var(--bg-clr)">
+                  <option>public</option>
+                  <option>private</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="post-input-container">
+              <textarea
+                rows="3"
+                placeholder="What's on your mind, Madhavan?"
+              ></textarea>
+              <div class="add-post-links">
+                <a href="#"
+                  ><img src="./images/live-video.png" alt="live-video-icon" />
+                  Live Video</a
+                >
+                <a href="#"
+                  ><img
+                    src="./images/photo.png"
+                    alt="photo-video-icon"
+                  />Photo/Video</a
+                >
+                <a href="#"
+                  ><img src="./images/feeling.png" alt="feeling-icon" />
+                  Feeling/Activity</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="profile-container">
+              <div class="user-profile">
+                <img src="./images/profile-pic.png" alt="User profile" />
+                <div>
+                  <p>John Nicholson</p>
+                  <span>June 24 2021, 01:40 pm</span>
+                </div>
+              </div>
+              <img src="./images/more.png" alt="menu-icon" class="menu" />
+            </div>
+            <p class="post-text">
+              Subscribe <span>@Madhavan</span> YouTube channel to watch more
+              video on website development and UI designs.
+              <a href="#"> #Madhavan</a> <a href="#">#YouTubeChannel</a>
+            </p>
+            <img
+              src="./images/feed-image-1.png"
+              alt="feed-image-1"
+              class="feed-image"
+            />
+            <div class="post-row">
+              <div class="activity-icon">
+                <div>
+                  <img src="./images/like-blue.png" alt="like-icon" />120
+                </div>
+                <div>
+                  <img src="./images/comments.png" alt="comments-icon" />45
+                </div>
+                <div><img src="./images/share.png" alt="share-icon" />20</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./images/profile-pic.png" alt=" profile-pic" />
+                <img src="./images/arrow.png" alt=" down-arrow" />
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="profile-container">
+              <div class="user-profile">
+                <img src="./images/profile-pic.png" alt="User profile" />
+                <div>
+                  <p>John Nicholson</p>
+                  <span>June 24 2021, 01:40 pm</span>
+                </div>
+              </div>
+              <img src="./images/more.png" alt="menu-icon" class="menu" />
+            </div>
+            <p class="post-text">
+              Like and share this video with friends, tag
+              <span>@Madhavan</span> facebook page on your post. Ask your doubts
+              in the comments
+              <a href="#"> #Madhavan</a>
+              <a href="#">#YouTubeChannel</a>
+            </p>
+            <img
+              src="./images/feed-image-2.png"
+              alt="feed-image-2"
+              class="feed-image"
+            />
+            <div class="post-row">
+              <div class="activity-icon">
+                <div><img src="./images/like.png" alt="like-icon" />120</div>
+                <div>
+                  <img src="./images/comments.png" alt="comments-icon" />45
+                </div>
+                <div><img src="./images/share.png" alt="share-icon" />20</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./images/profile-pic.png" alt=" profile-pic" />
+                <img src="./images/arrow.png" alt=" down-arrow" />
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="profile-container">
+              <div class="user-profile">
+                <img src="./images/profile-pic.png" alt="User profile" />
+                <div>
+                  <p>John Nicholson</p>
+                  <span>June 24 2021, 01:40 pm</span>
+                </div>
+              </div>
+              <img src="./images/more.png" alt="menu-icon" class="menu" />
+            </div>
+            <p class="post-text">
+              Subscribe <span>@Madhavan</span> YouTube channel to watch more
+              video on website development and UI designs.
+              <a href="#"> #Madhavan</a> <a href="#">#YouTubeChannel</a>
+            </p>
+            <img
+              src="./images/feed-image-3.png"
+              alt="feed-image"
+              class="feed-image"
+            />
+            <div class="post-row">
+              <div class="activity-icon">
+                <div><img src="./images/like.png" alt="like-icon" />120</div>
+                <div>
+                  <img src="./images/comments.png" alt="comments-icon" />45
+                </div>
+                <div><img src="./images/share.png" alt="share-icon" />20</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./images/profile-pic.png" alt=" profile-pic" />
+                <img src="./images/arrow.png" alt=" down-arrow" />
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="profile-container">
+              <div class="user-profile">
+                <img src="./images/profile-pic.png" alt="User profile" />
+                <div>
+                  <p>John Nicholson</p>
+                  <span>June 24 2021, 01:40 pm</span>
+                </div>
+              </div>
+              <img src="./images/more.png" alt="menu-icon" class="menu" />
+            </div>
+            <p class="post-text">
+              Subscribe <span>@Madhavan</span> YouTube channel to watch more
+              video on website development and UI designs.
+              <a href="#"> #Madhavan</a> <a href="#">#YouTubeChannel</a>
+            </p>
+            <img
+              src="./images/feed-image-4.png"
+              alt="feed-image"
+              class="feed-image"
+            />
+            <div class="post-row">
+              <div class="activity-icon">
+                <div><img src="./images/like.png" alt="like-icon" />120</div>
+                <div>
+                  <img src="./images/comments.png" alt="comments-icon" />45
+                </div>
+                <div><img src="./images/share.png" alt="share-icon" />20</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./images/profile-pic.png" alt=" profile-pic" />
+                <img src="./images/arrow.png" alt=" down-arrow" />
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="profile-container">
+              <div class="user-profile">
+                <img src="./images/profile-pic.png" alt="User profile" />
+                <div>
+                  <p>John Nicholson</p>
+                  <span>June 24 2021, 01:40 pm</span>
+                </div>
+              </div>
+              <img src="./images/more.png" alt="menu-icon" class="menu" />
+            </div>
+            <p class="post-text">
+              Subscribe <span>@Madhavan</span> YouTube channel to watch more
+              video on website development and UI designs.
+              <a href="#"> #Madhavan</a> <a href="#">#YouTubeChannel</a>
+            </p>
+            <img
+              src="./images/feed-image-5.png"
+              alt="feed-image"
+              class="feed-image"
+            />
+            <div class="post-row">
+              <div class="activity-icon">
+                <div><img src="./images/like.png" alt="like-icon" />120</div>
+                <div>
+                  <img src="./images/comments.png" alt="comments-icon" />45
+                </div>
+                <div><img src="./images/share.png" alt="share-icon" />20</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./images/profile-pic.png" alt=" profile-pic" />
+                <img src="./images/arrow.png" alt=" down-arrow" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Copyright 2025 - SocialBook</p>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
